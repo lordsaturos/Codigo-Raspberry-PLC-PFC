@@ -1,0 +1,30 @@
+Lista de codigos recibidos del Arduino (Slave) al Raspberry (Master)
+
+Valor		Codigo			Significado										Respuesta
+0							Error de Función.								->Error de ordenes.
+1			A				Status Online. Sin errores.						->Todo OK.
+2			B				Status Online. Errores presentes.				->Pedir lista de errores.
+3			C				Tareas pendientes.     							->Comprobar tareas pendientes.
+4			D				Fecha y Hora del Arduino.						->Comprobar si la fecha y Hora del Arduino equivale a la del Raspberry.
+5			E				Error del Arduino.								->Comprobar lista de errores y actuar en consequencia.
+6			F				Recibir estado de Reles.						->Comprobamos el estado de los reles.
+7			G				Recibido Pulsaciones Teclado.					->Leer pulsaciones teclado y Actuar. //Funcion Debug y 
+8			H				Recibir estado Entradas Digitales. 				->Cargar nuevos valores entradas digitales en la BD.
+9			I				Recibir estado salidas Digitales.				->Comprobar valores salidas digitales		.	
+10			J				Recibir valor entrada analogica Precisión.		->Cargar nuevos valores entradas analogicas en la BD.
+11			K				Recibir estado sensores de Corriente.			->Cargar nuevos valores en la BD.
+12			L				Recibir estado Buzzer.							->Comprobamos el estado del Buzzer.
+13			M				Recibir estado Modo Debug.						->Leemos si el modo debug esta encendido o apagado.
+14			N
+15			O
+16			P
+17			Q
+18			R
+19			S
+20			T
+21			U
+22			V
+23			W
+24			X
+25			Y
+26			Z				FIN DE COMANDO									->El comando actual ha finalizado.

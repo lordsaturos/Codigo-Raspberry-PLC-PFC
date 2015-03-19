@@ -1,0 +1,15 @@
+auto eth0
+
+#auto dhcp
+#iface eth0 inet dhcp
+
+
+#static despacho upna
+iface eth0 inet static
+	#address 172.18.67.251
+	#netmask 255.255.224.0
+	#gateway 172.18.64.254
+
+	address 192.168.0.200
+	netmask 255.255.255.0
+	gateway 192.168.0.1
